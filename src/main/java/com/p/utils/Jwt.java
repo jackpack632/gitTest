@@ -25,6 +25,6 @@ public class Jwt {
                 .setSigningKey(signKey)//设置解析密钥，和生成密钥一样
                 .parseClaimsJws(jwt)//设置要解析的令牌
                 .getBody();
-return claims;
+        return claims;
     }
 }
