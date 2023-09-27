@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/EmergencyInfo")
 public class MsgController  {
-    @Autowired
+    @Autowired//?
     private MsgService msgService;
     @PostMapping
     public R save(@RequestBody Msg msg){
