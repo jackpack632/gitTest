@@ -18,10 +18,9 @@ import org.springframework.web.bind.annotation.*;
 public class MsgController  {
     @Autowired
     private MsgService msgService;
-
     @PostMapping
     public R save(@RequestBody Msg msg){
-        return new R(msgService.save(msg));
+        return new R().success();
     }
 
 }
